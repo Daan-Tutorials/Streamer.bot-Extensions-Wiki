@@ -1,6 +1,6 @@
 ---
-title: Post to Twitter (by Lyfesaver74 and Nate1280)
-description: Stream Chat To Twitter Post
+title: Post to Twitter (door Lyfesaver74 and Nate1280)
+description: Stream Chat naar Twitter Tweets
 published: true
 date: 2022-07-10T16:36:04.436Z
 tags:
@@ -8,27 +8,26 @@ editor: markdown
 dateCreated: 2022-04-27T04:14:39.472Z
 ---
 
-# Twitter Actions  ([by Nate1280](https://www.twitch.tv/nate1280))
-#### This code was expanded on [by TerrierDarts](https://www.twitch.tv/TerrierDarts)
+# Twitter Acties  ([door Nate1280](https://www.twitch.tv/nate1280))
+#### Deze code was groter gemaakt [door TerrierDarts](https://www.twitch.tv/TerrierDarts)
 
 # Tutorial
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/nc9edtn75pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Twitter Developer Set-up
-## Set Up Instructions
-The first thing you need to do is to get the key from the twitter API. You can do this by doing the following steps.
-> You will need **elevated access** for this to work. You can find out how to do that by clicking [**Here**](#getting-elevated-access-if-needed) Or Scrolling a bit further down. 
-> 
+# Twitter Developer Installatie
+## Installatie Instructies
+Het eerste wat je moet doen is de key van de twitter API krijgen. Je kan dit doen door deze stappen te volgen.
+> Je hebt **elevated access** nodig om dit te laten werken. Je kan er achter komen hoe je dat moet doen als je klikt [**hier**](#getting-elevated-access-if-needed) of een beetje verder naar beneden te scrollen.
 > {.is-warning}
-1. Go to - https://developer.twitter.com/en/portal/dashboard
-2. Sign in with Twitter.
-3. Once on the "Developer Portal" you should see on the Left Hand Side "Projects & Apps"
-4. Create yourself an App, you can use `Projects` or `Standalone`.
-5. Give your app a name, Id Suggest something like "MySBTwitterApp"
-6. Then you will see a load of tokens, at this point you will need to press "App Settings" (We are going to get new tokens in a minute dont worry about those)
-7. You will need to set the app to to `Oauth 1.0a`
-> `Oauth 2.0` uses different endpoints so it will not work. {.is-warning}
-8. Change `Oauth 1.0a Settings` to `Read and Write`
+1. Ga naar - https://developer.twitter.com/en/portal/dashboard
+2. Log in met Twitter.
+3. Wanner je op "Developer Portal" bent zou je op de linker zijde "Projects & Apps" moeten zien.
+4. Maak zelf een App, je kan `Projects` or `Standalone` gebruiken.
+5. Geef je app een naam, ik zou je iets als "MySBTwitterApp" aanraden.
+6. Dan zie je heel veel tokens, op dit punt moet je op "App Settings" klikken (We gaan nieuwe tokens krijgen in een minuutje maak je niet zorgen om deze)
+7. Je moet de app zetten op `Oauth 1.0a`
+> `Oauth 2.0` gebruikt andere eindpunten zo dat zou niet werken. {.is-warning}
+8. Verander `Oauth 1.0a Settings` naar `Read and Write`
 9. In the Callback Url will need to match as your Websocket is in SB. By default its set as `http://127.0.0.1:7474` and you will need to put Website Url as your twitter address, if any other boxes require a url put in that same address. If done it should look like this - ![twittersettings.png](/extensions/twitter/images/twittersettings.png) ![httpservertwitter.png](/extensions/twitter/images/httpservertwitter.png)
 
 
